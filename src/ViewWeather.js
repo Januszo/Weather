@@ -4,15 +4,15 @@ import Row from 'react-bootstrap/Row';
 
 class ViewWeather extends React.Component {
     render() {
-        const { city, lon, lat, temp, temp_min, temp_max, humidity, pressure, speed, deg, rain1h, error } = this.props;
-        
-        if (city === '') { return(<div>ENTER YOUR CITY</div>) } 
-        else if (error === true) { return(<div>We couldn't find:{" "}{city}</div>)}
+        let { tempCity, lon, lat, temp, temp_min, temp_max, humidity, pressure, speed, deg, rain1h, error } = this.props;
+
+        if (tempCity === '') { return(<div></div>) } 
+        else if (error === true) { return(<div>We couldn't find:{" "}{tempCity}</div>)}
         else {
             return(
                 <Container>
                     <Row className="justify-content-md-center">
-                        {city}<br />
+                        Your city: {tempCity}<br />
                         {lon}<br />
                         {lat}<br />
                         {temp}<br />
