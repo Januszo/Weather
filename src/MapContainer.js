@@ -7,7 +7,7 @@ class MapContainer extends React.Component {
     lat = parseFloat(lat)
     lon = parseFloat(lon)
     const mapStyles = {
-      width: '100%',
+      width: '90%',
       height: '100%',
     };
     return(

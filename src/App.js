@@ -4,6 +4,7 @@ import SearchCity from './SearchCity';
 import ViewWeather from './ViewWeather';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import axios from 'axios';
 
 class App extends React.Component {
@@ -75,7 +76,9 @@ render() {
       <Container className="main-container">
         {imBusy && loader}
         <Row>
-          <h1>Weather app</h1>
+          <Col>
+            <h1>Weather app</h1>
+          </Col>
           <SearchCity city={city} handleSubmit={this.handleSubmit} handleCityChange={this.handleCityChange} />
         </Row>
         <br /><br />

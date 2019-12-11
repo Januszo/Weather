@@ -1,5 +1,13 @@
 .main-container {
-  padding-top: 50px;
+  padding: 50px 0;
+}
+
+html {
+  background: black;
+}
+
+#root {
+  background: #F5F5F5;
 }
 
 /* LOADER */
